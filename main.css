@@ -1,0 +1,73 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body{
+    width: 100%;
+    /* height: 100%; */
+    overflow-x: hidden;
+    background-color: wheat
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-auto-rows: 100px;
+    grid-auto-flow: dense;
+    gap: 0.4em;
+    padding: 5px;
+    
+}
+
+.grid-container > div{
+    background-color: white;
+    border: solid 1px black;
+    overflow: hidden;
+   
+
+}
+.grid-container > div > img{
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+
+}
+
+.header{ 
+    text-align: center;
+    padding: 5vh;
+}
+
+
+
+.col-2{
+    grid-column: span 2;
+}
+.col-3{
+    grid-column: span 3;
+}
+.col-4{
+    grid-column: span 4;
+}
+.col-5{
+    grid-column: span 5;
+}
+
+.row-2{
+    grid-row: span 2;
+}
+.row-3{
+    grid-row: span 2;
+}
+.row-4{
+    grid-row: span 2;
+}
+.row-5{
+    grid-row: span 2;
+}
+
