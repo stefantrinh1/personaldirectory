@@ -16,14 +16,31 @@ body {
     font-size: 18px;
 }
 
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     grid-auto-rows: 100px;
     grid-auto-flow: dense;
     gap: 0.4em;
-    padding: 5px;
+    padding: 5px 20vh;
+}
 
+@media (max-width: 1000px){
+    .grid-container{
+        padding: 5px 15vh;
+    }
+}
+
+@media (max-width: 800px){
+    .grid-container{
+        padding: 5px 10vh;
+    }
+}
+@media (max-width: 450px){
+    .grid-container{
+        padding: 5px 5vh;
+    }
 }
 
 .grid-container>div {
@@ -31,12 +48,13 @@ body {
     opacity: 0.7;
     /* border: solid 1px black;   useful for see the grid boxes */
     overflow: hidden;
+    padding: 12px;
 
 
 }
 
 .grid-container>div:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     opacity: 1;
     transition: 0.4s ease-in-out;
 }
@@ -46,10 +64,48 @@ body {
     object-fit: contain;
     width: 100%;
     height: 100%;
-    padding: 3px;
-
 
 }
+
+.grid-container>div.codelist>a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.grid-container>div.codelist>a *{
+    padding: 10px;
+    margin: 0px;
+}
+
+.grid-container>div.codelist > a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: brown;
+    letter-spacing: 0.1em;
+    text-align: center;
+    transition: 0.2s ease-in-out;
+    
+}
+
+.grid-container>div.codelist > a:hover{
+    color: brown;
+    
+}
+
+.grid-container>div.codelist > a:hover::after{
+    color: brown;
+    position: relative;
+    left: 12.5%;
+    width: 75%;
+ 
+}
+
 
 .header {
     text-align: center;
