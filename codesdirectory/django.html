@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="codedirectory.css">
+    <title>Python & Django Commands</title>
+</head>
+
+<body>
+    <section id="codelist">
+        <h1>Commands</h1>
+        <img style="width: 150px;" class="logo" src="../logos/django-logo.png" alt="">
+        <hr>
+
+        <p>All the Python and Django commands and their functions</p>
+
+        <div id="contents">
+            <h4><u>Index List:</u></h4>
+
+            <ol>
+                <li><a href="#django-help">Django Help Commands</a></li>
+                <li><a href="#starter-commands">Starter Commands</a></li>
+                <li><a href="#manage.py-commands">Manage.py Commands</a></li>
+                <li><a href="#python-commands">Python Commands</a></li>
+                <li><a href="#virtualenv-commands">Virtual Environment Commands</a></li>
+                <li><a href="#anaconda-commands">Anaconda Commands</a></li>
+
+            </ol>
+        </div>
+
+        <br>
+
+        <a name="django-help"></a>
+        <h3>Django Help Commands</h3>
+
+
+        <table>
+            <th>Commands</th>
+            <th>Description</th>
+            <tr>
+                <td>django-admin help</td>
+                <td>to display usage information and a list of the commands provided by each application.</td>
+
+
+            </tr>
+            <tr>
+                <td>django-admin help [command]</td>
+                <td> to display a list of all available commands.</td>
+
+            </tr>
+            <tr>
+                <td>django-admin help --commands</td>
+                <td>to display a description of the given command and a list of its available options.</td>
+            </tr>
+
+
+
+        </table>
+
+        <br>
+
+        <a name="starter-commands"></a>
+        <h3> Starter Commands</h3>
+
+
+        <table>
+            <th>Commands</th>
+            <th>Description</th>
+            <tr>
+                <td> django-admin.py startproject myprojectname</td>
+                <td> Creates a Django Project and auto generates the files needed. </td>
+            </tr>
+            <tr>
+                <td>python manage.py startapp blog</td>
+                <td>Creates an application within the project</td>
+            </tr>
+
+        </table>
+
+        <br>
+
+        <a name="manage.py-commands"></a>
+        <h3>Manage.py Commands</h3>
+        <table>
+            <th>Commands</th>
+            <th>Description</th>
+            <tr>
+                <td>python manage.py migrate</td>
+                <td>Migrates the changes in the models/forms/etc to the database.</td>
+            </tr>
+            <tr>
+                <td>python manage.py makemigratations</td>
+                <td>Migrates the changes in the models/forms/etc to the database.</td>
+            </tr>
+            <tr>
+                <td>python manage.py runserver</td>
+                <td>Runs the Server usaully port:8000</td>
+            </tr>
+            <tr>
+                <td>python manage.py runserver 8080</td>
+                <td>Runs the Server on specfic port</td>
+            </tr>
+            <tr>
+                <td>python manage.py createsuperuser</td>
+                <td>Creates a Superuser with full permissions.</td>
+            </tr>
+
+
+        </table>
+        <br>
+        <a name="python-commands"></a>
+        <h3>Python Commands</h3>
+        <table>
+            <th>Commands</th>
+            <th>Description</th>
+            <tr>
+                <td>python --version</td>
+                <td>Starts Python Interpreter</td>
+            </tr>
+            <tr>
+                <td>python</td>
+                <td>Starts Python Interpreter</td>
+            </tr>
+            <tr>
+                <td>exit()</td>
+                <td>Exits the Python Interpreter</td>
+            </tr>
+            <tr>
+                <td>python test.py</td>
+                <td>Runs the test.py file and return result in terminal or actions the file script.</td>
+            </tr>
+            <tr>
+                <td>python get-pip.py</td>
+                <td>Installs Pip</td>
+            </tr>
+            <tr>
+                <td>pip install -U pip</td>
+                <td>upgrades pip</td>
+            </tr>
+
+            <tr>
+                <td>pip search django</td>
+                <td>The search command allows you to search through the database of packages in Python’s central
+                    package repository</td>
+            </tr>
+
+            <tr>
+                <td>pip install [Flask/packagename]</td>
+                <td>Installs packages using pip</td>
+            </tr>
+
+            <tr>
+                <td>pip uninstall [Flask/packagename]</td>
+                <td>Uninstalls packages using pip</td>
+            </tr>
+            <tr>
+                <td>pip list</td>
+                <td>Lists all the packages within pip</td>
+            </tr>
+
+
+        </table>
+        <br>
+        <a name="virtualenv-commands"></a>
+        <h3>Virtual Environment Commands</h3>
+        <p>There are two main types of Env you can use in python, pipenv or virtualenv</p>
+
+        <table>
+            <th>Commands</th>
+            <th>Description</th>
+            <tr>
+                <td>pip3 install pipenv</td>
+                <td>Installs PipEnv environment</td>
+            </tr>
+            <tr>
+                <td>pip3 install virtualenv </td>
+                <td>Installs VirtualENV package</td>
+            </tr>
+            <tr>
+                <td>virtualenv [environment-name]</td>
+                <td>Creates a virtual Environment</td>
+            </tr>
+            <tr>
+                <td>source [environment-name]/bin/activate</td>
+                <td>Activates Virtual Environment</td>
+            </tr>
+            <tr>
+                <td>deactivate</td>
+                <td>Deactivates the Virtual Environment</td>
+            </tr>
+            <tr>
+                <td>pipenv install [requests/package]</td>
+                <td>Installs requests package or the package you name using pipenv</td>
+            </tr>
+            <tr>
+                <td>pip install [requests/package]</td>
+                <td>Installs requests package or the package you name using virtualenv packge</td>
+            </tr>
+
+
+
+        </table>
+        <br>
+
+        <a name="anaconda-commands"></a>
+        <h3>Anaconda Commands</h3>
+        <table>
+            <th>Commands</th>
+            <th>Description</th>
+            <tr>
+                <td>conda -V</td>
+                <td>Checks the version of Anaconda</td>
+            </tr>
+            <tr>
+                <td>conda info --envs</td>
+                <td>display the current environments saved</td>
+            </tr>
+            <tr>
+                <td>conda update conda</td>
+                <td>Updates all the packages that come pre installed with Anaconda</td>
+            </tr>
+            <tr>
+                <td>conda create -n [yourenvname] python=x.x anaconda</td>
+                <td>Creates a virtual Environment In Anaconda</td>
+            </tr>
+            <tr>
+                <td>source activate [yourenvname]</td>
+                <td>Activates your chosen Virtual Environment </td>
+            </tr>
+            <tr>
+                <td>conda install -n [yourenvname] [package]</td>
+                <td>Install additional Python packages to a virtual environment.</td>
+            </tr>
+            <tr>
+            <tr>
+                <td>conda env update –f environment.yml –n your_env_name</td>
+                <td>Update the environment</td>
+            </tr>
+            <tr>
+                <td>source deactivate</td>
+                <td>Deactivates the Virtual Environment In Anaconda</td>
+            </tr>
+            <tr>
+                <td>conda remove -n yourenvname -all</td>
+                <td>Delete a no longer needed virtual environment</td>
+            </tr>
+
+
+        </table>
+
+
+    </section>
+
+    <style>
+        th {
+            background: green;
+        }
+    </style>
+
+</body>
+
+</html>

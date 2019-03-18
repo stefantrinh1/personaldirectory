@@ -1,0 +1,1672 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+
+/* ============================== */
+/* =======  CSS Library  ======== */
+/* ============================== */
+
+/* This AniCSS Library, the following Styles are the default style from this library */
+/* Adjust how neccessary to your needs. */
+
+/*
+CMD+F   OR    CTRL +F 
+on the contents names to find the styles you wish to alter
+*/
+
+/*== contents ===
+
+
+--- Layout
+> Width Control
+> Height Control
+> Display Control
+> Vertical Inline Control
+
+--- Font
+>font-styles
+>font-colors
+>font-weights
+
+--- Overflow Classes
+
+--- enlarge Elements
+
+--- Rotate Elements
+
+--- Opacity
+
+--- Margin and Padding
+
+=== End of Contents ===*/
+
+/* =========================================== */
+/* ===============   Layout   ================ */
+/* =========================================== */
+
+/* ================== */
+/* ==  Grid System == */
+/* ================== */
+
+/* We use modern CSS Grid Styles, please make sure the majority of your audience have broswers newer than 2016 */
+/* This grid only uses up to 8 columns */
+.grid-row {
+    display: grid;
+    box-shadow: 0px;
+    grid-auto-flow: dense;
+}
+
+.grid-item {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.grid-item img {}
+
+.grid-col-1 {
+    grid-template-columns: 1fr;
+}
+
+.grid-col-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-col-6 {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-col-7 {
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.grid-col-8 {
+    grid-template-columns: repeat(8, 1fr);
+}
+
+/* column spans */
+.col-span-1 {
+    grid-column: span 1;
+}
+
+.col-span-2 {
+    grid-column: span 2;
+}
+
+.col-span-3 {
+    grid-column: span 3;
+}
+
+.col-span-4 {
+    grid-column: span 4;
+}
+
+.col-span-5 {
+    grid-column: span 5;
+}
+
+.col-span-6 {
+    grid-column: span 6;
+}
+
+.col-span-7 {
+    grid-column: span 7;
+}
+
+.col-span-8 {
+    grid-column: span 8;
+}
+
+/* row spans */
+.row-span-1 {
+    grid-row: span 1;
+}
+
+.row-span-2 {
+    grid-row: span 2;
+}
+
+.row-span-3 {
+    grid-row: span 3;
+}
+
+.row-span-4 {
+    grid-row: span 4;
+}
+
+.row-span-5 {
+    grid-row: span 5;
+}
+
+.row-span-6 {
+    grid-row: span 6;
+}
+
+.row-span-7 {
+    grid-row: span 7;
+}
+
+.row-span-8 {
+    grid-row: span 8;
+}
+
+@media only screen and (max-width: 1024px) {
+    .grid-col-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-col-6 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-col-7 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid-col-8 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-col-3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-col-5 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-col-6 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-col-7 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-col-8 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .grid-col-2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-col-4 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-col-5 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-col-7 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* =================== */
+/* = Display Control = */
+/* =================== */
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.inline {
+    display: inline;
+}
+
+.flex {
+    display: flex;
+}
+
+/* =================== */
+/* = Display Control = */
+/* =================== */
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.inline {
+    display: inline;
+}
+
+.flex {
+    display: flex;
+}
+
+/* ==================== */
+/* = Position Control = */
+/* ==================== */
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.static {
+    position: static;
+}
+
+.fixed {
+    position: fixed;
+}
+
+
+/* =================== */
+/* = Flex Control = */
+/* =================== */
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+    /* flex-flow: row wrap; */
+}
+
+/* ========================= */
+/* Vertical Inline Control */
+/* ========================= */
+
+.vat {
+    vertical-align: top;
+}
+
+.vam {
+    vertical-align: middle;
+}
+
+.vab {
+    vertical-align: bottom;
+}
+
+
+/* ==================== */
+/* =====  Float  ====== */
+/* ==================== */
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+/* ================== */
+/* Width Control */
+/* ================== */
+
+.w-10 {
+    width: 10%;
+}
+
+.w-15 {
+    width: 15%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.w-33 {
+    width: 33.3333333%;
+}
+
+.w-49 {
+    width: 49%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-66 {
+    width: 66.666666%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+/* ================== */
+/* Height Control */
+/* ================== */
+
+.h-25 {
+    height: 25%;
+}
+
+.h-33 {
+    height: 33.3333333%;
+}
+
+.h-50 {
+    height: 50%;
+}
+
+.w-66 {
+    height: 66.666666%;
+}
+
+.h-75 {
+    height: 75%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+/* ================ */
+/* Overflow Classes */
+/* ================ */
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/* ============= */
+/* = Font Size = */
+/* ============= */
+
+.font-small {
+    font-size: 12px;
+}
+
+.font-medium {
+    font-size: 16px;
+}
+
+.font-large {
+    font-size: 20px;
+}
+
+.font-xlarge {
+    font-size: 24px;
+}
+
+.font-xxlarge {
+    font-size: 30px;
+}
+
+.font-xxxlarge {
+    font-size: 34px;
+}
+
+.font-xxxxlarge {
+    font-size: 38px;
+}
+
+/* ============ */
+/* Font Colours */
+/* ============ */
+
+.black-text {
+    color: black;
+}
+
+.white-text {
+    color: #ffffff;
+}
+
+.red-text {
+    color: #96272b;
+}
+
+.blue-text {
+    color: #557a95;
+}
+
+.green-text {
+    color: #afd275;
+}
+
+.yellow-text {
+    color: #fdc10a;
+}
+
+.light-grey-text {
+    color: #d3d3d3;
+}
+
+.dark-grey-text {
+    color: #272727;
+}
+
+.cream-text {
+    color: #eee2dc;
+}
+
+.beige-text {
+    color: #bab2b5;
+}
+
+/* ============= */
+/*  Font Weight  */
+/* ============= */
+
+.bold {
+    font-weight: bold;
+}
+
+.extra-bold {
+    font-weight: bolder;
+}
+
+/* ================ */
+/*  Text-Decoration  */
+/* ================ */
+
+.underline {
+    text-decoration: underline;
+}
+
+.extra-bold {
+    font-weight: bolder;
+}
+
+/* ==================== */
+/*  Text-Allign Control */
+/* ==================== */
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* ================== */
+/* Background Colours */
+/* ================== */
+
+.white-bg {
+    background-color: #ffffff;
+}
+
+.black-bg {
+    background-color: #000000;
+}
+
+.red-bg {
+    background-color: #96272b;
+}
+
+.blue-bg {
+    background-color: #557a95;
+}
+
+.green-bg {
+    background-color: #afd275;
+}
+
+.yellow-bg {
+    background-color: #fdc10a;
+}
+
+.light-grey-bg {
+    background-color: #d3d3d3;
+}
+
+.dark-grey-bg {
+    background-color: #272727;
+}
+
+.cream-bg {
+    background-color: #eee2dc;
+}
+
+.beige-bg {
+    background-color: #bab2b5;
+}
+
+/* =========================== */
+/* Changing Background Colours */
+/* =========================== */
+
+.bg-alter-red,
+.bg-alter-blue,
+.bg-alter-green,
+.bg-alter-yellow,
+.bg-alter-darkgrey,
+.bg-alter-lightgrey,
+.bg-alter-cream,
+.bg-alter-beige {
+    animation-name: transform-background;
+    animation-duration: 1s;
+}
+
+.bg-alter-red:hover {
+    background-color: #96272b;
+}
+
+.bg-alter-blue:hover {
+    background-color: #557a95;
+}
+
+.bg-alter-green:hover {
+    background-color: #afd275;
+}
+
+.bg-alter-yellow:hover {
+    background-color: #fdc10a;
+}
+
+.bg-alter-darkgrey:hover {
+    background-color: #272727;
+}
+
+.bg-alter-lightgrey:hover {
+    background-color: #d3d3d3;
+}
+
+.bg-alter-cream:hover {
+    background-color: #eee2dc;
+}
+
+.bg-alter-beige:hover {
+    background-color: #bab2b5;
+}
+
+/* ================ */
+/* Border Classes */
+/* ================ */
+
+.b-thin-black {
+    border: solid 1px #000000;
+}
+
+.b-medium-black {
+    border: solid 2px #000000;
+}
+
+.b-thick-black {
+    border: solid 2px #000000;
+}
+
+/* Border Radius */
+
+.b-radius-small {
+    border-radius: 10px;
+}
+
+.b-radius-medium {
+    border-radius: 20px;
+}
+
+.b-radius-large {
+    border-radius: 30px;
+}
+
+.b-radius-xlarge {
+    border-radius: 40px;
+}
+
+.b-radius-xxlarge {
+    border-radius: 50px;
+}
+
+/* ================ */
+/* Enlarge element */
+/* =============== */
+
+.sm-expand:hover,
+.md-expand:hover,
+.lg-expand:hover {
+    transition: all 0.3s ease-in-out;
+}
+
+.sm-expand:hover {
+    transform: scale(1.1);
+}
+
+.md-expand:hover {
+    transform: scale(1.2);
+}
+
+.lg-expand:hover {
+    transform: scale(1.3);
+}
+
+/* ================ */
+/* Rotate element */
+/* =============== */
+
+
+.rotate-1,
+.rotate-2,
+.rotate-3 {
+    transition: all 0.6s ease-in-out;
+}
+
+.rotate-1:hover {
+    transform: rotate(1080deg) scale(1.3);
+}
+
+.rotate-2:hover {
+    transform: rotate(20deg) scale(1.3);
+}
+
+.rotate-3:hover {
+    transform: rotate(360deg) scale(1.3);
+}
+
+/* ================ */
+/* opacity element */
+/* =============== */
+
+.op-90 {
+    opacity: 0.9;
+}
+
+.op-80 {
+    opacity: 0.8;
+}
+
+.op-70 {
+    opacity: 0.7;
+}
+
+.op-60 {
+    opacity: 0.6;
+}
+
+.op-50 {
+    opacity: 0.5;
+}
+
+.op-0 {
+    opacity: 0;
+}
+
+/* ============================= */
+/* ==== Margin and Padding ===== */
+/* ============================= */
+
+/* ================== */
+/* ==== Margin ===== */
+/* ================== */
+
+/* Overall Margin */
+.m-0 {
+    margin: 0px;
+}
+
+.m-1 {
+    margin: 10px;
+}
+
+.m-2 {
+    margin: 20px;
+}
+
+.m-3 {
+    margin: 30px;
+}
+
+.m-4 {
+    margin: 40px;
+}
+
+.m-5 {
+    margin: 50px;
+}
+
+/* Margin Left */
+
+.ml-0 {
+    margin-left: 0px;
+}
+
+.ml-1 {
+    margin-left: 10px;
+}
+
+.ml-2 {
+    margin-left: 20px;
+}
+
+.ml-3 {
+    margin-left: 30px;
+}
+
+.ml-4 {
+    margin-left: 40px;
+}
+
+.ml-5 {
+    margin-left: 50px;
+}
+
+/* Margin Right */
+
+.mr-0 {
+    margin-right: 0px;
+}
+
+.mr-1 {
+    margin-right: 10px;
+}
+
+.mr-2 {
+    margin-right: 20px;
+}
+
+.mr-3 {
+    margin-right: 30px;
+}
+
+.mr-4 {
+    margin-right: 40px;
+}
+
+.mr-5 {
+    margin-right: 50px;
+}
+
+/* Margin Top */
+.mt-0 {
+    margin-top: 0px;
+}
+
+.mt-1 {
+    margin-top: 10px;
+}
+
+.mt-2 {
+    margin-top: 20px;
+}
+
+.mt-3 {
+    margin-top: 30px;
+}
+
+.mt-4 {
+    margin-top: 40px;
+}
+
+.mt-5 {
+    margin-top: 50px;
+}
+
+/* Margin bottom */
+.mb-0 {
+    margin-bottom: 0px;
+}
+
+.mb-1 {
+    margin-bottom: 10px;
+}
+
+.mb-2 {
+    margin-bottom: 20px;
+}
+
+.mb-3 {
+    margin-bottom: 30px;
+}
+
+.mb-4 {
+    margin-bottom: 40px;
+}
+
+.mb-5 {
+    margin-bottom: 50px;
+}
+
+/* Margin Horizontal */
+.mx-0 {
+    margin: 0px 0px;
+}
+
+.mx-1 {
+    margin: 0px 10px;
+}
+
+.mx-2 {
+    margin: 0px 20px;
+}
+
+.mx-3 {
+    margin: 0px 30px;
+}
+
+.mx-4 {
+    margin: 0px 40px;
+}
+
+.mx-5 {
+    margin: 0px 50px;
+}
+
+/* Margin Vertical */
+
+.my-0 {
+    margin: 0px 0px;
+}
+
+.my-1 {
+    margin: 10px 0px;
+}
+
+.my-2 {
+    margin: 20px 0px;
+}
+
+.my-3 {
+    margin: 30px 0px;
+}
+
+.my-4 {
+    margin: 40px 0px;
+}
+
+.my-5 {
+    margin: 50px 0px;
+}
+
+/* ================== */
+/* ==== Padding ===== */
+/* ================== */
+
+/* Overall Padding */
+.p-0 {
+    padding: 0px;
+}
+
+.p-1 {
+    padding: 10px;
+}
+
+.p-2 {
+    padding: 20px;
+}
+
+.p-3 {
+    padding: 30px;
+}
+
+.p-4 {
+    padding: 40px;
+}
+
+.p-5 {
+    padding: 50px;
+}
+
+/* Padding Left */
+
+.pl-0 {
+    padding-left: 0px;
+}
+
+.pl-1 {
+    padding-left: 10px;
+}
+
+.pl-2 {
+    padding-left: 20px;
+}
+
+.pl-3 {
+    padding-left: 30px;
+}
+
+.pl-4 {
+    padding-left: 40px;
+}
+
+.pl-5 {
+    padding-left: 50px;
+}
+
+/* Padding Right */
+
+.pr-0 {
+    padding-right: 0px;
+}
+
+.pr-1 {
+    padding-right: 10px;
+}
+
+.pr-2 {
+    padding-right: 20px;
+}
+
+.pr-3 {
+    padding-right: 30px;
+}
+
+.pr-4 {
+    padding-right: 40px;
+}
+
+.pr-5 {
+    padding-right: 50px;
+}
+
+/* Padding Top */
+.pt-0 {
+    padding-top: 0px;
+}
+
+.pt-1 {
+    padding-top: 10px;
+}
+
+.pt-2 {
+    padding-top: 20px;
+}
+
+.pt-3 {
+    padding-top: 30px;
+}
+
+.pt-4 {
+    padding-top: 40px;
+}
+
+.pt-5 {
+    padding-top: 50px;
+}
+
+/* Padding bottom */
+.pb-0 {
+    padding-bottom: 0px;
+}
+
+.pb-1 {
+    padding-bottom: 10px;
+}
+
+.pb-2 {
+    padding-bottom: 20px;
+}
+
+.pb-3 {
+    padding-bottom: 30px;
+}
+
+.pb-4 {
+    padding-bottom: 40px;
+}
+
+.pb-5 {
+    padding-bottom: 50px;
+}
+
+/* Padding Horizontal */
+.px-0 {
+    padding: 0px 0px;
+}
+
+.px-1 {
+    padding: 0px 10px;
+}
+
+.px-2 {
+    padding: 0px 20px;
+}
+
+.px-3 {
+    padding: 0px 30px;
+}
+
+.px-4 {
+    padding: 0px 40px;
+}
+
+.px-5 {
+    padding: 0px 50px;
+}
+
+/* Padding Vertical */
+
+.py-0 {
+    padding: 0px 0px;
+}
+
+.py-1 {
+    padding: 10px 0px;
+}
+
+.py-2 {
+    padding: 20px 0px;
+}
+
+.py-3 {
+    padding: 30px 0px;
+}
+
+.py-4 {
+    padding: 40px 0px;
+}
+
+.py-5 {
+    padding: 50px 0px;
+}
+
+
+/* SLideshow */
+
+.slide-container {
+    display: block;
+    width: 100%;
+    height: 75vh;
+    z-index: 10000;
+}
+
+/* an Overlay to turn all images to a shade of light green. */
+.slide-overlay {
+    display: inline-block;
+    opacity: 0.6;
+    /* background-color: lightgreen; */
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+}
+
+
+.slideshow .slideshow-img {
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 75%;
+    width: 100%;
+    position: absolute;
+    /* layers the pictures on top of each other. */
+    opacity: 0;
+    -webkit-animation: slideshow-fade 25s infinite;
+    animation: slideshow-fade 25s infinite;
+    z-index: 1000;
+
+}
+
+.slideshow .slideshow-img:nth-child(2) {
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+}
+
+.slideshow .slideshow-img:nth-child(3) {
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+}
+
+.slideshow .slideshow-img:nth-child(4) {
+    -webkit-animation-delay: 15s;
+    animation-delay: 15s;
+}
+
+.slideshow .slideshow-img:nth-child(5) {
+    -webkit-animation-delay: 20s;
+    animation-delay: 20s;
+}
+
+/* Animation changing opacity */
+@-webkit-keyframes slideshow-fade {
+    from {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes slideshow-fade {
+    from {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
+
+.slideshow2 {
+    position: relative;
+    width: 500%;
+    overflow: hidden;
+    -webkit-animation: slider 30s infinite;
+    animation: slider 30s infinite;
+    -webkit-transition: 20s;
+    transition: 20s;
+}
+
+.slideshow2 .slideshow-img {
+    position: relative;
+    width: 20%;
+    float: left;
+}
+
+@-webkit-keyframes slider {
+    from {
+        left: 0;
+    }
+
+    50% {
+        left: -400%
+    }
+
+    to {
+        left: 0%
+    }
+
+}
+
+@keyframes slider {
+    from {
+        left: 0;
+    }
+
+    50% {
+        left: -400%
+    }
+
+    to {
+        left: 0%
+    }
+
+}
+
+
+/* ===================== */
+/* === Drop Down Tab System === */
+/* ===================== */
+
+
+.dropdown {
+    position: relative;
+    margin: 0 0 5px;
+    width: 100%;
+    overflow: hidden;
+    
+  }
+  .dropdown input {
+    display: none;
+  }
+  .dropdown label {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    display: block;
+    padding: 10px;
+    background: #96272b;
+  }
+  .dropdown-box {
+    max-height: 0vh;
+    overflow: hidden;
+    background: #f0dddd;
+    transition: all ease-in-out 0.7s;
+    transform: rotateY(90deg);
+
+  }
+  .dropdown-box p {
+    margin: 10px;
+  }
+  .dropdown input:checked ~ .dropdown-box {
+    transform: rotateY(0deg);
+    max-height:100vh;
+  }
+  .dropdown label::after {
+    float: right;
+    transition: all ease-in-out 0.3s
+  }
+  .dropdown input[type=checkbox] + label::after {
+    content: "+";
+  }
+  .dropdown input[type=checkbox]:checked + label::after {
+    transform: rotate(1040deg);
+  }
+
+
+
+/* ===================== */
+/* === Filter System === */
+/* ===================== */
+
+#filter-system {
+    display: block;
+    max-width: 1680px;
+    width: 100%;
+    text-align: center;
+}
+#filter-system input{
+display: none;
+}
+
+#filter-system #filter-labels{
+    margin: 30px;
+    
+}
+#filter-system #filter-labels label {
+    margin: 0px 30px;
+    font-size: 18px;
+}
+
+#filter-system .card-list {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#filter-system .card  {
+    margin: 10px;
+    transition: all ease-in 0.1s;
+    /* border: 1px black solid; */
+    
+}
+
+#filter-system .card .card-content {
+    
+}
+
+#filter-system .card .card-content .card-content-img {
+    width: 300px;
+}
+
+#filter-system .card .card-content .card-content-copy {
+    
+    color: black;
+}
+
+/* Each Button Should have 31 combinations. */
+/* =========================================================== */
+/* ==============  Filter1 FILTER BUTTON    ================== */
+
+input#filter1:checked~.card-list .card-filter2-filter3-filter4-filter5-filter6,
+input#filter1:checked~.card-list .card-filter2-filter3-filter4-filter5,
+input#filter1:checked~.card-list .card-filter2-filter3-filter4-filter6,
+input#filter1:checked~.card-list .card-filter2-filter3-filter5-filter6,
+input#filter1:checked~.card-list .card-filter2-filter4-filter5-filter6,
+input#filter1:checked~.card-list .card-filter3-filter4-filter5-filter6,
+input#filter1:checked~.card-list .card-filter2-filter3-filter4,
+input#filter1:checked~.card-list .card-filter2-filter3-filter5,
+input#filter1:checked~.card-list .card-filter2-filter3-filter6,
+input#filter1:checked~.card-list .card-filter2-filter4-filter5,
+input#filter1:checked~.card-list .card-filter2-filter4-filter6,
+input#filter1:checked~.card-list .card-filter2-filter5-filter6,
+input#filter1:checked~.card-list .card-filter3-filter4-filter5,
+input#filter1:checked~.card-list .card-filter3-filter4-filter6,
+input#filter1:checked~.card-list .card-filter3-filter5-filter6,
+input#filter1:checked~.card-list .card-filter4-filter5-filter6,
+input#filter1:checked~.card-list .card-filter2-filter3,
+input#filter1:checked~.card-list .card-filter2-filter4,
+input#filter1:checked~.card-list .card-filter2-filter5,
+input#filter1:checked~.card-list .card-filter2-filter6,
+input#filter1:checked~.card-list .card-filter3-filter4,
+input#filter1:checked~.card-list .card-filter3-filter5,
+input#filter1:checked~.card-list .card-filter3-filter6,
+input#filter1:checked~.card-list .card-filter4-filter5,
+input#filter1:checked~.card-list .card-filter4-filter6,
+input#filter1:checked~.card-list .card-filter5-filter6,
+input#filter1:checked~.card-list .card-filter2,
+input#filter1:checked~.card-list .card-filter3,
+input#filter1:checked~.card-list .card-filter4,
+input#filter1:checked~.card-list .card-filter5,
+input#filter1:checked~.card-list .card-filter6 {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    min-width: 0;
+}
+
+/* =========================================================== */
+/* ==============  Filter2 FILTER BUTTON    ================== */
+
+input#filter2:checked~.card-list .card-filter1-filter3-filter4-filter5-filter6,
+input#filter2:checked~.card-list .card-filter1-filter3-filter4-filter5,
+input#filter2:checked~.card-list .card-filter1-filter3-filter4-filter6,
+input#filter2:checked~.card-list .card-filter1-filter3-filter5-filter6,
+input#filter2:checked~.card-list .card-filter1-filter4-filter5-filter6,
+input#filter2:checked~.card-list .card-filter3-filter4-filter5-filter6,
+input#filter2:checked~.card-list .card-filter1-filter3-filter4,
+input#filter2:checked~.card-list .card-filter1-filter3-filter5,
+input#filter2:checked~.card-list .card-filter1-filter3-filter6,
+input#filter2:checked~.card-list .card-filter1-filter4-filter5,
+input#filter2:checked~.card-list .card-filter1-filter4-filter6,
+input#filter2:checked~.card-list .card-filter1-filter5-filter6,
+input#filter2:checked~.card-list .card-filter3-filter4-filter5,
+input#filter2:checked~.card-list .card-filter3-filter4-filter6,
+input#filter2:checked~.card-list .card-filter3-filter5-filter6,
+input#filter2:checked~.card-list .card-filter4-filter5-filter6,
+input#filter2:checked~.card-list .card-filter1-filter3,
+input#filter2:checked~.card-list .card-filter1-filter4,
+input#filter2:checked~.card-list .card-filter1-filter5,
+input#filter2:checked~.card-list .card-filter1-filter6,
+input#filter2:checked~.card-list .card-filter3-filter4,
+input#filter2:checked~.card-list .card-filter3-filter5,
+input#filter2:checked~.card-list .card-filter3-filter6,
+input#filter2:checked~.card-list .card-filter4-filter5,
+input#filter2:checked~.card-list .card-filter4-filter6,
+input#filter2:checked~.card-list .card-filter5-filter6,
+input#filter2:checked~.card-list .card-filter1,
+input#filter2:checked~.card-list .card-filter3,
+input#filter2:checked~.card-list .card-filter4,
+input#filter2:checked~.card-list .card-filter5,
+input#filter2:checked~.card-list .card-filter6 {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    min-width: 0;
+}
+
+/* =========================================================== */
+/* ==============  Filter3 FILTER BUTTON    ================== */
+
+input#filter3:checked~.card-list .card-filter1-filter2-filter4-filter5-filter6,
+input#filter3:checked~.card-list .card-filter1-filter2-filter4-filter5,
+input#filter3:checked~.card-list .card-filter1-filter2-filter4-filter6,
+input#filter3:checked~.card-list .card-filter1-filter2-filter5-filter6,
+input#filter3:checked~.card-list .card-filter1-filter4-filter5-filter6,
+input#filter3:checked~.card-list .card-filter2-filter4-filter5-filter6,
+input#filter3:checked~.card-list .card-filter1-filter2-filter4,
+input#filter3:checked~.card-list .card-filter1-filter2-filter5,
+input#filter3:checked~.card-list .card-filter1-filter2-filter6,
+input#filter3:checked~.card-list .card-filter1-filter4-filter5,
+input#filter3:checked~.card-list .card-filter1-filter4-filter6,
+input#filter3:checked~.card-list .card-filter1-filter5-filter6,
+input#filter3:checked~.card-list .card-filter2-filter4-filter5,
+input#filter3:checked~.card-list .card-filter2-filter4-filter6,
+input#filter3:checked~.card-list .card-filter2-filter5-filter6,
+input#filter3:checked~.card-list .card-filter4-filter5-filter6,
+input#filter3:checked~.card-list .card-filter1-filter2,
+input#filter3:checked~.card-list .card-filter1-filter4,
+input#filter3:checked~.card-list .card-filter1-filter5,
+input#filter3:checked~.card-list .card-filter1-filter6,
+input#filter3:checked~.card-list .card-filter2-filter4,
+input#filter3:checked~.card-list .card-filter2-filter5,
+input#filter3:checked~.card-list .card-filter2-filter6,
+input#filter3:checked~.card-list .card-filter4-filter5,
+input#filter3:checked~.card-list .card-filter4-filter6,
+input#filter3:checked~.card-list .card-filter5-filter6,
+input#filter3:checked~.card-list .card-filter1,
+input#filter3:checked~.card-list .card-filter2,
+input#filter3:checked~.card-list .card-filter4,
+input#filter3:checked~.card-list .card-filter5,
+input#filter3:checked~.card-list .card-filter6 {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    min-width: 0;
+}
+
+/* =========================================================== */
+/* ==============  Filter4 FILTER BUTTON    ================== */
+
+input#filter4:checked~.card-list .card-filter1-filter2-filter3-filter5-filter6,
+input#filter4:checked~.card-list .card-filter1-filter2-filter3-filter5,
+input#filter4:checked~.card-list .card-filter1-filter2-filter3-filter6,
+input#filter4:checked~.card-list .card-filter1-filter2-filter5-filter6,
+input#filter4:checked~.card-list .card-filter1-filter3-filter5-filter6,
+input#filter4:checked~.card-list .card-filter2-filter3-filter5-filter6,
+input#filter4:checked~.card-list .card-filter1-filter2-filter3,
+input#filter4:checked~.card-list .card-filter1-filter2-filter5,
+input#filter4:checked~.card-list .card-filter1-filter2-filter6,
+input#filter4:checked~.card-list .card-filter1-filter3-filter5,
+input#filter4:checked~.card-list .card-filter1-filter3-filter6,
+input#filter4:checked~.card-list .card-filter1-filter5-filter6,
+input#filter4:checked~.card-list .card-filter2-filter3-filter5,
+input#filter4:checked~.card-list .card-filter2-filter3-filter6,
+input#filter4:checked~.card-list .card-filter2-filter5-filter6,
+input#filter4:checked~.card-list .card-filter3-filter5-filter6,
+input#filter4:checked~.card-list .card-filter1-filter2,
+input#filter4:checked~.card-list .card-filter1-filter3,
+input#filter4:checked~.card-list .card-filter1-filter5,
+input#filter4:checked~.card-list .card-filter1-filter6,
+input#filter4:checked~.card-list .card-filter2-filter3,
+input#filter4:checked~.card-list .card-filter2-filter5,
+input#filter4:checked~.card-list .card-filter2-filter6,
+input#filter4:checked~.card-list .card-filter3-filter5,
+input#filter4:checked~.card-list .card-filter3-filter6,
+input#filter4:checked~.card-list .card-filter5-filter6,
+input#filter4:checked~.card-list .card-filter1,
+input#filter4:checked~.card-list .card-filter2,
+input#filter4:checked~.card-list .card-filter3,
+input#filter4:checked~.card-list .card-filter5,
+input#filter4:checked~.card-list .card-filter6 {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    min-width: 0;
+}
+
+/* =========================================================== */
+/* ==============  Filter5 FILTER BUTTON    ================== */
+
+input#filter5:checked~.card-list .card-filter1-filter2-filter3-filter4-filter6,
+input#filter5:checked~.card-list .card-filter1-filter2-filter3-filter4,
+input#filter5:checked~.card-list .card-filter1-filter2-filter3-filter6,
+input#filter5:checked~.card-list .card-filter1-filter2-filter4-filter6,
+input#filter5:checked~.card-list .card-filter1-filter3-filter4-filter6,
+input#filter5:checked~.card-list .card-filter2-filter3-filter4-filter6,
+input#filter5:checked~.card-list .card-filter1-filter2-filter3,
+input#filter5:checked~.card-list .card-filter1-filter2-filter4,
+input#filter5:checked~.card-list .card-filter1-filter2-filter6,
+input#filter5:checked~.card-list .card-filter1-filter3-filter4,
+input#filter5:checked~.card-list .card-filter1-filter3-filter6,
+input#filter5:checked~.card-list .card-filter1-filter4-filter6,
+input#filter5:checked~.card-list .card-filter2-filter3-filter4,
+input#filter5:checked~.card-list .card-filter2-filter3-filter6,
+input#filter5:checked~.card-list .card-filter2-filter4-filter6,
+input#filter5:checked~.card-list .card-filter3-filter4-filter6,
+input#filter5:checked~.card-list .card-filter1-filter2,
+input#filter5:checked~.card-list .card-filter1-filter3,
+input#filter5:checked~.card-list .card-filter1-filter4,
+input#filter5:checked~.card-list .card-filter1-filter6,
+input#filter5:checked~.card-list .card-filter2-filter3,
+input#filter5:checked~.card-list .card-filter2-filter4,
+input#filter5:checked~.card-list .card-filter2-filter6,
+input#filter5:checked~.card-list .card-filter3-filter4,
+input#filter5:checked~.card-list .card-filter3-filter6,
+input#filter5:checked~.card-list .card-filter4-filter6,
+input#filter5:checked~.card-list .card-filter1,
+input#filter5:checked~.card-list .card-filter2,
+input#filter5:checked~.card-list .card-filter3,
+input#filter5:checked~.card-list .card-filter4,
+input#filter5:checked~.card-list .card-filter6 {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    min-width: 0;
+}
+
+/* =========================================================== */
+/* ==============  Filter6 FILTER BUTTON    ================== */
+
+input#filter6:checked~.card-list .card-filter1-filter2-filter3-filter4-filter5,
+input#filter6:checked~.card-list .card-filter1-filter2-filter3-filter4,
+input#filter6:checked~.card-list .card-filter1-filter2-filter4-filter5,
+input#filter6:checked~.card-list .card-filter1-filter3-filter4-filter5,
+input#filter6:checked~.card-list .card-filter2-filter3-filter4-filter5,
+input#filter6:checked~.card-list .card-filter1-filter2-filter3,
+input#filter6:checked~.card-list .card-filter1-filter2-filter4,
+input#filter6:checked~.card-list .card-filter1-filter2-filter5,
+input#filter6:checked~.card-list .card-filter1-filter3-filter4,
+input#filter6:checked~.card-list .card-filter1-filter3-filter5,
+input#filter6:checked~.card-list .card-filter1-filter4-filter5,
+input#filter6:checked~.card-list .card-filter2-filter3-filter4,
+input#filter6:checked~.card-list .card-filter2-filter3-filter5,
+input#filter6:checked~.card-list .card-filter2-filter4-filter5,
+input#filter6:checked~.card-list .card-filter3-filter4-filter5,
+input#filter6:checked~.card-list .card-filter1-filter2,
+input#filter6:checked~.card-list .card-filter1-filter3,
+input#filter6:checked~.card-list .card-filter1-filter4,
+input#filter6:checked~.card-list .card-filter1-filter5,
+input#filter6:checked~.card-list .card-filter2-filter3,
+input#filter6:checked~.card-list .card-filter2-filter4,
+input#filter6:checked~.card-list .card-filter2-filter5,
+input#filter6:checked~.card-list .card-filter3-filter4,
+input#filter6:checked~.card-list .card-filter3-filter5,
+input#filter6:checked~.card-list .card-filter4-filter5,
+input#filter6:checked~.card-list .card-filter1,
+input#filter6:checked~.card-list .card-filter2,
+input#filter6:checked~.card-list .card-filter3,
+input#filter6:checked~.card-list .card-filter4,
+input#filter6:checked~.card-list .card-filter5 {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    min-width: 0;
+}
+
+/* ====================   /Filter System  ========================= */
+
+/*  =========   ALL POSSIBLE COMBINATIONS OF CARDS  =========== */
+/*
+.filter1-filter2-filter3-filter4-filter5-filter6
+.card-filter2-filter3-filter4-filter5-filter6
+.card-filter1-filter3-filter4-filter5-filter6
+.card-filter1-filter2-filter4-filter5-filter6
+.card-filter1-filter2-filter3-filter5-filter6
+.card-filter1-filter2-filter3-filter4-filter6
+.card-filter1-filter2-filter3-filter4-filter5
+
+.card-filter1-filter2-filter3-filter4
+.card-filter1-filter2-filter3-filter5
+.card-filter1-filter2-filter3-filter6
+.card-filter1-filter2-filter4-filter5
+.card-filter1-filter2-filter4-filter6
+.card-filter1-filter2-filter5-filter6
+.card-filter1-filter3-filter4-filter5
+.card-filter1-filter3-filter4-filter6
+.card-filter1-filter3-filter5-filter6
+.card-filter1-filter4-filter5-filter6
+.card-filter2-filter3-filter4-filter5
+.card-filter2-filter3-filter4-filter6
+.card-filter2-filter3-filter5-filter6
+.card-filter2-filter4-filter5-filter6
+.card-filter3-filter4-filter5-filter6
+
+.card-filter1-filter2-filter3
+.card-filter1-filter2-filter4
+.card-filter1-filter2-filter5
+.card-filter1-filter2-filter6
+.card-filter1-filter3-filter4
+.card-filter1-filter3-filter5
+.card-filter1-filter3-filter6
+.card-filter1-filter4-filter5
+.card-filter1-filter4-filter6
+.card-filter1-filter5-filter6
+.card-filter2-filter3-filter4
+.card-filter2-filter3-filter5
+.card-filter2-filter3-filter6
+.card-filter2-filter4-filter5
+.card-filter2-filter4-filter6
+.card-filter2-filter5-filter6
+.card-filter3-filter4-filter5
+.card-filter3-filter4-filter6
+.card-filter3-filter5-filter6
+.card-filter4-filter5-filter6
+
+.card-filter1-filter2
+.card-filter1-filter3
+.card-filter1-filter4
+.card-filter1-filter5
+.card-filter1-filter6
+.card-filter2-filter3
+.card-filter2-filter4
+.card-filter2-filter5
+.card-filter2-filter6
+.card-filter3-filter4
+.card-filter3-filter5
+.card-filter3-filter6
+.card-filter4-filter5
+.card-filter4-filter6
+.card-filter5-filter6
+
+.card-filter1
+.card-filter2
+.card-filter3
+.card-filter4
+.card-filter5
+.card-filter6
+
+    */
