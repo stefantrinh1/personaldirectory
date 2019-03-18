@@ -15,127 +15,134 @@
         <!-- <img style="width: 150px;" class="logo" src="../logos/django-logo.png" alt=""> -->
         <hr>
 
-        <p>All the Terminal commands and their functions</p>
+        <p>All the NodeJS, Npm and Yarn commands</p>
         <div id="contents">
             <h4><u>Index List:</u></h4>
 
             <ol>
 
-                <li><a href="#basic-commands">Basic Commands</a></li>
-                <li><a href="#branching-merging">Brew Commandså</a></li>
+                <li><a href="#nodejs">NodeJS Commands</a></li>
+                <li><a href="#npm">NPM Commands</a></li>
+                <li><a href="#yarn">Yarn Commands</a></li>
 
             </ol>
         </div>
+
+
         <br>
-        <a name="basic-commands"></a>
-        <h3>Basic Commands</h3>
+        <a name="nodejs"></a>
+        <h3>Node JS Commands</h3>
         <table>
             <th>Commands</th>
             <th>Description</th>
 
             <tr>
-                <td>mkdir [foldername]</td>
-                <td>Makes a Folder/ Directory</td>
+                <td>node -V</td>
+                <td>Checks the version of NodeJs you have</td>
             </tr>
             <tr>
-                <td>rmdir [directoryname]</td>
-                <td>Removes A Directory (must be empty directory)</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+
+        <br>
+        <a name="npm"></a>
+        <h3>NPM Commands</h3>
+
+
+        <table>
+            <th>Commands</th>
+            <th>Description</th>
+            <tr>
+                <td>npm init</td>
+                <td>Creates the Npm files you need in the current working directory</td>
             </tr>
             <tr>
-                <td>touch [filename]</td>
-                <td>Creates a New File</td>
+                <td>npm [command] help</td>
+                <td>To get help for a particular command, use the command</td>
+            </tr>
+            <tr>
+                <td>npm list</td>
+                <td> Shows all the Npm packages installed locally in the project</td>
+            </tr>
+            <tr>
+                <td>npm list -g</td>
+                <td> Shows all the Npm packages installed globally on your system</td>
+            </tr>
+            <tr>
+                <td>npm install</td>
+                <td>Checks for package.json file and installs all the packages in the package.json manifesto</td>
             </tr>
 
             <tr>
-                <td>rm [filename]</td>
-                <td>Removes File Specified</td>
+                <td>npm install [package_name]</td>
+                <td>Installs npm package locally</td>
             </tr>
 
             <tr>
-                <td>cd [foldername]</td>
-                <td>Changes current directory into the folder specified</td>
+                <td>npm install -g [package_name]</td>
+                <td>Install a npm package globally on your system.</td>
             </tr>
 
             <tr>
-                <td>ls</td>
-                <td>Lists all the directorys and files in the current folder</td>
+                <td>npm update</td>
+                <td>Updates all the local specified package to the newest version</td>
             </tr>
             <tr>
-                <td>pwd</td>
-                <td>Prints current directory to the terminal</td>
+                <td>npm update [package_name]</td>
+                <td>Updates the local specified package to the newest version</td>
             </tr>
             <tr>
-                <td>cp filename1 filename2</td>
-                <td>Copies a File and makes another with a different name</td>
+                <td>npm uninstall [package_name]</td>
+                <td>Uninstalls the specified package</td>
             </tr>
-
             <tr>
-                <td>sudo</td>
-                <td>Lets you carry out commands for which the account you are using
-                    lacks authority. You will be asked for an administrator’s
-                    password.</td>
+                <td>npm uninstall [package_name] -g</td>
+                <td>Uninstalls the specified package globally</td>
             </tr>
 
         </table>
 
+        
         <br>
-        <br>
-        <a name="brew-commands"></a>
-        <h3> Brew Commands</h3>
-
+        <a name="yarn"></a>
+        <h3>Yarn Commands</h3>
 
         <table>
             <th>Commands</th>
             <th>Description</th>
             <tr>
-                <td>brew list</td>
-                <td>Shows all the packages installed by brew. </td>
+                <td>yarn install</td>
+                <td>Install all the dependencies listed within package.json in the local node_modules folder.</td>
+            </tr>
+            <tr>
+                <td>yarn start</td>
+                <td>If this is setup in the yarn.json it should start the live server for the project</td>
             </tr>
 
             <tr>
-                <td> brew --version</td>
-                <td> Prints Current version of brew </td>
+                <td>yarn init</td>
+                <td>Creates the Yarn files you need in the current working directory</td>
+            </tr>
+            <tr>
+                <td>yarn add [package]</td>
+                <td>Installs package locally</td>
+            </tr>
+            <tr>
+                <td>yarn add [package]@[version]</td>
+                <td>Installs specific version of package locally</td>
             </tr>
 
             <tr>
-                <td> brew update</td>
-                <td> Updates only brew</td>
-            </tr>
-            <tr>
-                <td> brew upgrade</td>
-                <td> Updates All Packages installed by Brew</td>
+                <td>yarn add [package] --dev</td>
+                <td>Installs package as dev dependencies</td>
             </tr>
 
             <tr>
-                <td> brew install python</td>
-                <td> Installs Python using Brew</td>
-            </tr>
-            <tr>
-                <td> brew upgrade python</td>
-                <td> Upgrades Python to newest version </td>
-            </tr>
-            <tr>
-                <td> brew pin [packagename]</td>
-                <td> Prevents that package from being updated </td>
-            </tr>
-            <tr>
-                <td> brew unpin [packagename]</td>
-                <td> unpins the package from being updated </td>
-            </tr>
-
-            <tr>
-                <td>brew cleanup [packagename]</td>
-                <td> uninstalls old versions of that package (brew does not automactically uninstall old versions) </td>
-            </tr>
-
-            <tr>
-                <td>brew cleanup</td>
-                <td>Uninstalls old versions of every package (brew does not automactically uninstall old versions) </td>
-            </tr>
-
-            <tr>
-                <td>brew cleanup -n</td>
-                <td>Shows the packages that would be cleaned up in ther terminal </td>
+                <td>yarn remove [package]</td>
+                <td>Yarn Removes package from project</td>
             </tr>
 
         </table>
@@ -146,7 +153,7 @@
 
     <style>
         th {
-            background: darkred;
+            background: rgb(250, 9, 9);
         }
     </style>
 
