@@ -6,6 +6,8 @@
 
 Why not use a Personal Directory with everything you need displayed on one Browser page.
 
+- [Go To Live Project](https://stefantrinh1.github.io/personaldirectory/)
+
 A Personal Directory page that uses a grid system to display favourite links. It is currently tailored to a web developer user but can be arranged to make your own personal directory that suits your needs. it has single image grids and large grids for lists.
 
 ![PersonalDirectoryScreenShot](images/personal-directory-screenshot.png "Personal Directory Screenshot")
@@ -56,4 +58,5 @@ __**Stefan Trinh**__
 Web Developer  
 
 e: stefantrinh1.work@gmail.com  
+g: https://github.com/stefantrinh1
 w: http://www.stefantrinh.co.uk  
