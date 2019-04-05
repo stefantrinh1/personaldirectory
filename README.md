@@ -1,7 +1,7 @@
 # Personal Directory
 
-Run out of room on your favourites bar?
-Is everything too nested?
+Run out of room on your favourites bar?  
+Is everything too nested?  
 Have too many links you use regularly?
 
 Why not use a Personal Directory with everything you need displayed on one Browser page.
