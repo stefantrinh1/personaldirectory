@@ -1,12 +1,12 @@
 # Personal Directory
 
-Run out of room on your favourites bar?  
-Is everything too nested?  
-Have too many links you use regularly?
+> __**Run out of room on your favourites bar?**__  
+> __**Is everything too nested?**__    
+> __**Have too many links you use regularly?**__  
 
 Why not use a Personal Directory with everything you need displayed on one Browser page.
 
-A Personal Directory page that uses a grid system to display favourite links. It is currently tailored to a web developer user but can be arranged to make your own personal directory that suits your needs. it has single image grids and large image grids for lists.
+A Personal Directory page that uses a grid system to display favourite links. It is currently tailored to a web developer user but can be arranged to make your own personal directory that suits your needs. it has single image grids and large grids for lists.
 
 ![PersonalDirectoryScreenShot](images/personal-directory-screenshot.png "Personal Directory Screenshot")
 
@@ -47,3 +47,13 @@ eventually it will also have to option log in.
 - Small gallery slide sho
 - Countdown to certain dates
 - Notepad
+
+### Contact Details
+
+If you have any questions or would like to get in touch, please contact me using the details below.
+
+__**Stefan Trinh**__  
+Web Developer  
+
+e: stefantrinh1.work@gmail.com  
+w: http://www.stefantrinh.co.uk  
