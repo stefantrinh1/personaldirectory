@@ -58,5 +58,5 @@ __**Stefan Trinh**__
 Web Developer  
 
 e: stefantrinh1.work@gmail.com  
-g: https://github.com/stefantrinh1
+g: https://github.com/stefantrinh1  
 w: http://www.stefantrinh.co.uk  
