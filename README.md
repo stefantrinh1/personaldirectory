@@ -50,7 +50,7 @@ eventually it will also have to option log in.
 - Countdown to certain dates
 - Notepad
 
-### Contact Details
+## Contact Details
 
 If you have any questions or would like to get in touch, please contact me using the details below.
 
