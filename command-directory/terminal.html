@@ -23,6 +23,7 @@
 
                 <li><a href="#basic-commands">Basic Commands</a></li>
                 <li><a href="#branching-merging">Brew Commandså</a></li>
+                <li><a href="#sudo">Sudo Commands</a></li>
 
             </ol>
         </div>
@@ -70,17 +71,36 @@
             </tr>
 
             <tr>
-                <td>sudo</td>
-                <td>Lets you carry out commands for which the account you are using
-                    lacks authority. You will be asked for an administrator’s
-                    password.</td>
-            </tr>
-            <tr>
                 <td>find $(pwd) -type f</td>
                 <td>This gets every filepath in the current working directory. great for grabbing urls.</td>
             </tr>
 
 
+        </table>
+
+        <a name="sudo"></a>
+        <h3>Sudo Commands</h3>
+
+        <table>
+            <th>Commands</th>
+            <th>Description</th>
+            <tr>
+                <td>sudo</td>
+                <td>Running sudo before any command will give elevated privileges</td>
+            </tr>
+
+            <tr>
+                <td>ls -l</td>
+                <td>Lists all the folder and file permissions in the current directory</td>
+            </tr>
+            <tr>
+                <td>sudo chown</td>
+                <td>Chown command changes the user and/or group ownership of for given file. The syntax is:</td>
+            </tr>
+            <tr>
+                <td>sudo chown -R your_user /usr/local</td>
+                <td>Changes access to full admin privileges in specified folder and subfolders</td>
+            </tr>
         </table>
 
         <br>
