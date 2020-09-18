@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="codedirectory.css" />
+    <title>React Commands</title>
+  </head>
+
+  <body>
+    <section id="codelist">
+      <h1>React Commands</h1>
+      <!-- <img style="width: 150px;" class="logo" src="../logos/django-logo.png" alt=""> -->
+      <hr />
+
+      <p>All the React commands and their functions</p>
+      <div id="contents">
+        <h4><u>Index List:</u></h4>
+
+        <ol>
+          <li><a href="#react-commands">React Commands</a></li>
+          <li><a href="#react-native-commands">React Native Commands</a></li>
+          <li><a href="#branching-merging">Brew Commandså</a></li>
+        </ol>
+      </div>
+      <br />
+      <a name="react-commands"></a>
+      <h3>Basic React Commands</h3>
+      <table>
+        <th>Commands</th>
+        <th>Description</th>
+
+        <tr>
+          <td>
+            babel index.js --out-file=bundle.js --presets=env,react --watch
+          </td>
+          <td>
+            sets up babel with react and env presets index.js input and bundle
+            the output file
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+
+      <br />
+      <br />
+      <a name="react-native-commands"></a>
+      <h3>React Native Commands</h3>
+      <table>
+        <th>Commands</th>
+        <th>Description</th>
+
+        <tr>
+          <td>react-native init projectName</td>
+          <td>Using React Native CLI, create a new react native project</td>
+        </tr>
+        <tr>
+          <td>react-native run-ios</td>
+          <td>Runs The emulator on MacOS for Mac</td>
+        </tr>
+        <tr>
+          <td>react-native run-android</td>
+          <td>Runs The emulator on Andriod Studio For Windows</td>
+        </tr>
+      </table>
+
+      <br />
+      <br />
+      <a name="brew-commands"></a>
+      <h3>Brew Commands</h3>
+
+      <table>
+        <th>Commands</th>
+        <th>Description</th>
+        <tr>
+          <td>brew list</td>
+          <td>Shows all the packages installed by brew.</td>
+        </tr>
+
+        <tr>
+          <td>brew --version</td>
+          <td>Prints Current version of brew</td>
+        </tr>
+
+        <tr>
+          <td>brew update</td>
+          <td>Updates only brew</td>
+        </tr>
+        <tr>
+          <td>brew upgrade</td>
+          <td>Updates All Packages installed by Brew</td>
+        </tr>
+
+        <tr>
+          <td>brew install python</td>
+          <td>Installs Python using Brew</td>
+        </tr>
+        <tr>
+          <td>brew upgrade python</td>
+          <td>Upgrades Python to newest version</td>
+        </tr>
+        <tr>
+          <td>brew pin [packagename]</td>
+          <td>Prevents that package from being updated</td>
+        </tr>
+        <tr>
+          <td>brew unpin [packagename]</td>
+          <td>unpins the package from being updated</td>
+        </tr>
+
+        <tr>
+          <td>brew cleanup [packagename]</td>
+          <td>
+            uninstalls old versions of that package (brew does not
+            automactically uninstall old versions)
+          </td>
+        </tr>
+
+        <tr>
+          <td>brew cleanup</td>
+          <td>
+            Uninstalls old versions of every package (brew does not
+            automactically uninstall old versions)
+          </td>
+        </tr>
+
+        <tr>
+          <td>brew cleanup -n</td>
+          <td>Shows the packages that would be cleaned up in ther terminal</td>
+        </tr>
+      </table>
+
+      <br />
+    </section>
+
+    <style>
+      th {
+        background: darkred;
+      }
+    </style>
+  </body>
+</html>
